@@ -157,6 +157,19 @@ If you have suggestions for a new payload to be added or if there's an important
                 f.write(f"\\n## Available Payloads\\n\\n{start_marker}\\n{table_content}\\n{end_marker}\\n")
 
 
+def get_mirror_assets():
+    owner = "itsPLK"
+    repo = "ps5-payloads-mirror"
+    try:
+        cmd = ["gh", "api", f"repos/{owner}/{repo}/releases/tags/payloads-mirror"]
+        result = subprocess.run(cmd, capture_output=True, text=True)
+        if result.returncode == 0:
+            release_info = json.loads(result.stdout)
+            return {asset["name"] for asset in release_info.get("assets", [])}
+    except Exception as e:
+        print(f"Error fetching mirror assets: {e}")
+    return set()
+
 def cleanup_release_assets():
     print("\nChecking for stale release assets to clean up...")
     owner = "itsPLK"
@@ -201,6 +214,8 @@ def update_payloads():
     except FileNotFoundError:
         print(f"Error: {JSON_FILE} not found.")
         return
+
+    mirror_assets = get_mirror_assets()
 
     updated = False
     for item in payloads:
@@ -281,7 +296,8 @@ def update_payloads():
             filepath = os.path.join(PAYLOADS_DIR, new_filename)
             needs_download = (
                 item.get("version") != new_version or 
-                item.get("filename") != new_filename
+                item.get("filename") != new_filename or
+                new_filename not in mirror_assets
             )
             
             if needs_download:
