@@ -80,7 +80,7 @@ def calculate_checksum(filepath):
         return None
 
 def reorder_item(item):
-    order = ["name", "filename", "url", "source", "source_direct", "extract_file", "description", "last_update", "version", "checksum"]
+    order = ["name", "filename", "url", "source", "source_direct", "asset_pattern", "extract_file", "description", "last_update", "version", "checksum"]
     new_item = {}
     for key in order:
         if key in item:
@@ -241,6 +241,7 @@ def update_payloads():
         if not assets:
             continue
             
+        asset_pattern = item.get("asset_pattern")
         has_extract = "extract_file" in item
         preferred_ext = ".bin" if "etaHEN" in repo_name else ".elf"
         
@@ -254,6 +255,9 @@ def update_payloads():
             if not (name.endswith(".elf") or name.endswith(".bin") or (has_extract and name.endswith(".zip"))):
                 if not name.endswith(preferred_ext):
                     return -1
+            
+            if asset_pattern and not re.search(asset_pattern, name, re.IGNORECASE):
+                return -1
             
             score = 0
             if name.endswith(preferred_ext):
