@@ -5,27 +5,63 @@ This repository contains an automated mirror of useful payloads for the PlayStat
 ## Available Payloads
 
 <!-- PAYLOADS_START -->
+
+### 🔓 Jailbreak & HEN
+
+| Payload | Version | Description | Last Updated | Source | Download |
+| --- | --- | --- | --- | --- | --- |
+| **etaHEN** | `2.5B` | AIO HEN payload | `2025-12-25` | [Source](https://github.com/etaHEN/etaHEN/releases) | [Download](https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/etaHEN_2.5B.bin) |
+| **Lapy-JB-Daemon** | `v1.2` | Standalone homebrew jailbreak daemon for PS5. Mimics etaHEN's jailbreak-on-demand API. | `2026-06-01` | [Source](https://github.com/itsPLK/PS5-Lapy-JB-Daemon/releases) | [Download](https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/Lapy-JB-Daemon_v1.2.elf) |
+
+### 🧠 Kernel Patches
+
 | Payload | Version | Description | Last Updated | Source | Download |
 | --- | --- | --- | --- | --- | --- |
 | **kstuff-lite** | `v1.07` | Lite version of kstuff | `2026-06-08` | [Source](https://github.com/EchoStretch/kstuff-lite/releases) | [Download](https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/kstuff-lite_v1.07.elf) |
-| **pldmgr** | `v0.3.1` | A modern, web-based dashboard to easily manage, import, and automatically load payloads on your PS5. | `2026-06-06` | [Source](https://github.com/itsPLK/pldmgr/releases) | [Download](https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/pldmgr_v0.3.1.elf) |
-| **ShadowMountPlus** | `1.6test15-fix2` | A fully automated, background 'Auto-Mounter' payload for Jailbroken PlayStation 5 consoles. | `2026-06-03` | [Source](https://github.com/drakmor/ShadowMountPlus/releases) | [Download](https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/ShadowMountPlus_1.6test15-fix2.elf) |
-| **ps5debug-NG** | `1.2.7` | PS5 debugger payload - userland TCP wire-protocol server hosted inside SceShellCore. | `2026-06-03` | [Source](https://github.com/OpenSourcereR-dev/ps5debug-NG/releases) | [Download](https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/ps5debug-NG_1.2.7.elf) |
-| **nanoDNS** | `0.3` | Local DNS proxy server | `2026-06-03` | [Source](https://github.com/drakmor/nanoDNS/releases) | [Download](https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/nanoDNS_0.3.elf) |
-| **Lapy-JB-Daemon** | `v1.2` | Standalone homebrew jailbreak daemon for PS5. Mimics etaHEN's jailbreak-on-demand API. | `2026-06-01` | [Source](https://github.com/itsPLK/PS5-Lapy-JB-Daemon/releases) | [Download](https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/Lapy-JB-Daemon_v1.2.elf) |
 | **kstuff-lite-dr** | `1.2-dr-test1` | drakmor's fork of kstuff-lite | `2026-05-31` | [Source](https://github.com/drakmor/kstuff-lite/releases) | [Download](https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/kstuff-lite-dr_1.2-dr-test1.elf) |
+| **kstuff-toggle** | `0.6` | Boost homebrew game performance on your PS5 by disabling Kstuff after launching the game. | `2026-05-07` | [Source](https://github.com/EchoStretch/kstuff-toggle/releases) | [Download](https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/kstuff-toggle_0.6.elf) |
+| **kstuff** | `v1.6.7` | Dynamically patches the PS5 kernel to bypass security | `2026-01-04` | [Source](https://github.com/EchoStretch/kstuff/releases) | [Download](https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/kstuff_v1.6.7.elf) |
+
+### 🚀 Loaders & Launchers
+
+| Payload | Version | Description | Last Updated | Source | Download |
+| --- | --- | --- | --- | --- | --- |
+| **elf-arsenal** | `v1.6.17` | The all-in-one utility for PS5 — successor to Sonic Loader. | `2026-06-10` | [Source](https://git.etawen.dev/soniciso/elf-arsenal) | [Download](https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/elf-arsenal_v1.6.17.elf) |
+| **elf-arsenal-tile** | `v1.0` | PS5 tile PKG for elf-arsenal. | `2026-05-24` | [Source](https://git.etawen.dev/soniciso/elf-arsenal) | [Download](https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/elf-arsenal-tile_v1.6.17.pkg) |
+| **pldmgr** | `v0.3.1` | A modern, web-based dashboard to easily manage, import, and automatically load payloads on your PS5. | `2026-06-06` | [Source](https://github.com/itsPLK/pldmgr/releases) | [Download](https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/pldmgr_v0.3.1.elf) |
+| **elfldr** | `v0.23` | An ELF loader for jailbroken PS5s that accepts payloads on port 9021 | `2026-05-12` | [Source](https://github.com/ps5-payload-dev/elfldr/releases) | [Download](https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/elfldr_v0.23.elf) |
+
+### 📁 File & Save Management
+
+| Payload | Version | Description | Last Updated | Source | Download |
+| --- | --- | --- | --- | --- | --- |
+| **ShadowMountPlus** | `1.6test15-fix2` | A fully automated, background 'Auto-Mounter' payload for Jailbroken PlayStation 5 consoles. | `2026-06-03` | [Source](https://github.com/drakmor/ShadowMountPlus/releases) | [Download](https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/ShadowMountPlus_1.6test15-fix2.elf) |
 | **garlic-savemgr** | `v1.82b` | PS5 save decrypt/encrypt/browse with embedded web UI. | `2026-05-27` | [Source](https://git.etawen.dev/earthonion/garlic-savemgr/releases) | [Download](https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/garlic-savemgr_v1.82b.elf) |
+
+### 🌐 Network & Servers
+
+| Payload | Version | Description | Last Updated | Source | Download |
+| --- | --- | --- | --- | --- | --- |
+| **nanoDNS** | `0.3` | Local DNS proxy server | `2026-06-03` | [Source](https://github.com/drakmor/nanoDNS/releases) | [Download](https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/nanoDNS_0.3.elf) |
 | **websrv** | `v0.32` | A simple web server that accepts connections on port 8080 | `2026-05-25` | [Source](https://github.com/ps5-payload-dev/websrv/releases) | [Download](https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/websrv_v0.32.elf) |
 | **ftpsrv** | `v0.20` | A simple FTP server that accepts connections on port 2121 | `2026-05-12` | [Source](https://github.com/ps5-payload-dev/ftpsrv/releases) | [Download](https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/ftpsrv_v0.20.elf) |
-| **klogsrv** | `v0.8` | A simple socket server that redirects /dev/klog to sockets connected on port 3232 | `2026-05-12` | [Source](https://github.com/ps5-payload-dev/klogsrv/releases) | [Download](https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/klogsrv_v0.8.elf) |
-| **shsrv** | `v0.18.2` | A simple telnet-like shell server for jailbroken PS5s that accepts connections on port 2323 | `2026-05-12` | [Source](https://github.com/ps5-payload-dev/shsrv/releases) | [Download](https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/shsrv_v0.18.2.elf) |
-| **elfldr** | `v0.23` | An ELF loader for jailbroken PS5s that accepts payloads on port 9021 | `2026-05-12` | [Source](https://github.com/ps5-payload-dev/elfldr/releases) | [Download](https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/elfldr_v0.23.elf) |
-| **kstuff-toggle** | `0.6` | Boost homebrew game performance on your PS5 by disabling Kstuff after launching the game. | `2026-05-07` | [Source](https://github.com/EchoStretch/kstuff-toggle/releases) | [Download](https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/kstuff-toggle_0.6.elf) |
-| **BackPork** | `0.1` | Lets you sideload system libraries into PS5 games | `2026-04-30` | [Source](https://github.com/BestPig/BackPork/releases) | [Download](https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/BackPork_0.1.elf) |
 | **ftpsrv-drakmor** | `1.15-ng-stable` | drakmor's fork of ftpsrv | `2026-04-08` | [Source](https://github.com/drakmor/ftpsrv/releases) | [Download](https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/ftpsrv-drakmor_1.15-ng-stable.elf) |
 | **zftpd** | `v1.4.0` | Zero-copy FTP/HTTP Server | `2026-03-11` | [Source](https://github.com/seregonwar/zftpd/releases) | [Download](https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/zftpd_v1.4.0.elf) |
-| **kstuff** | `v1.6.7` | Dynamically patches the PS5 kernel to bypass security | `2026-01-04` | [Source](https://github.com/EchoStretch/kstuff/releases) | [Download](https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/kstuff_v1.6.7.elf) |
-| **etaHEN** | `2.5B` | AIO HEN payload | `2025-12-25` | [Source](https://github.com/etaHEN/etaHEN/releases) | [Download](https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/etaHEN_2.5B.bin) |
+
+### 🔧 Debugging & Development
+
+| Payload | Version | Description | Last Updated | Source | Download |
+| --- | --- | --- | --- | --- | --- |
+| **ps5debug-NG** | `1.2.7` | PS5 debugger payload - userland TCP wire-protocol server hosted inside SceShellCore. | `2026-06-03` | [Source](https://github.com/OpenSourcereR-dev/ps5debug-NG/releases) | [Download](https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/ps5debug-NG_1.2.7.elf) |
+| **klogsrv** | `v0.8` | A simple socket server that redirects /dev/klog to sockets connected on port 3232 | `2026-05-12` | [Source](https://github.com/ps5-payload-dev/klogsrv/releases) | [Download](https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/klogsrv_v0.8.elf) |
+| **shsrv** | `v0.18.2` | A simple telnet-like shell server for jailbroken PS5s that accepts connections on port 2323 | `2026-05-12` | [Source](https://github.com/ps5-payload-dev/shsrv/releases) | [Download](https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/shsrv_v0.18.2.elf) |
+
+### 🎮 Game Enhancements
+
+| Payload | Version | Description | Last Updated | Source | Download |
+| --- | --- | --- | --- | --- | --- |
+| **BackPork** | `0.1` | Lets you sideload system libraries into PS5 games | `2026-04-30` | [Source](https://github.com/BestPig/BackPork/releases) | [Download](https://github.com/itsPLK/ps5-payloads-mirror/releases/download/payloads-mirror/BackPork_0.1.elf) |
+
 <!-- PAYLOADS_END -->
 
 ## Support & Suggestions
